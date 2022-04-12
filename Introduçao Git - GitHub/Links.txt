@@ -1,1 +1,38 @@
-Anotações sobre git
+Anotações sobre Git
+
+Openssh - sha1 (nome do arquivo)
+gera arquivo criptografado com 40 caracteres.
+
+Blobs - contém metadados - gerados sha1
+Tree - armazena blobs - também têm sha1 - ela
+aponta para blobs ou trees.
+
+Comit - Junta tudo
+tree - sha1
+parent - sha1 - versão anterior
+autor - ("seu nome")
+mensagem - inicia
+
+Timestamp
+chaves ssh e tokens - gerar as chaves, ir na pasta,
+pegar a chave e colar no git.
+
+Comandos: 
+git clone - clona repositrio para pc
+git init - comando inicial para um novo repositório
+git add - inclusão ou atualização no dir local
+git commit - guarda o estado do seu repositório
+git ls - lista arquivos da pasta
+git ls -a - mostra arquivos ocultos
+git config -- global user.email "email" - configurar o level do projeto (local ou global)
+git status - mostra o estado atual do diretório (Staging Area)
+git mv "arquivo" ./"repositório" - move o arquivo para outros diretórios
+git add* - move tudo para comitar (Stage Area)
+git add. - move para Stage
+git commit -m "mensagem"
+git config --list - lista as configurações
+git config --global -- unset (escolhe o que deve ser alterado)
+git remote add origin - direciona pasta para o repositório git
+git push origin master - empurra para o hub
+git remote -v - mostra para onde o git está apontado
+
